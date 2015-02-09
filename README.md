@@ -1,1 +1,1 @@
-# katrina-bootstrap-webapp
+# App Walmart
