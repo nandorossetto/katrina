@@ -1,0 +1,30 @@
+.table{
+    border-collapse: separate;
+    border-spacing: 2px;
+    width: 100%;
+
+    th,
+    td{
+        padding: 5px;
+    }
+
+    th{
+        background: #cdbfe3;
+        color: #6f5499;
+        font-size: 14px;
+    }
+
+    td{
+        font-size: 12px;
+        vertical-align: middle;
+
+        &.even{
+            background: #efefef;
+        }
+    }
+
+    img{
+        max-width: 100px;
+        border: 1px solid #eee;
+    }
+}
