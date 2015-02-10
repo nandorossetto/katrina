@@ -1,3 +1,18 @@
-<ul>
-    <li ng-repeat="tool in tools">{{ tool.name }}</li>
-</ul>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Cliente</th>
+            <th>Nome do Produto</th>
+            <th>Descrição</th>
+            <th>Foto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="client in clients">
+            <td ng-class-even="'even'">{{ client.name }}</td>
+            <td ng-class-even="'even'">{{ client.order[$index].name }}</td>
+            <td ng-class-even="'even'">{{ client.order[$index].description }}</td>
+            <td ng-class-even="'even'"><img ng-src="{{ client.order[$index].image }}" alt="{{ client.order[$index].name }}"></td>
+        </tr>
+    </tbody>
+</table>
