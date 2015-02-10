@@ -1,4 +1,61 @@
+@import 'compass/css3/inline-block';
+
 body{
-    background: #eee;
-    padding: 20px;
+    font-family: 'Roboto', Arial;
+}
+
+#container-header{
+    width: 100%;
+    background: #6f5499;
+    border-top: 2px solid #553785;
+
+    .header{
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .title{
+        font-size: 20px;
+        font-weight: normal;
+        color: #fff;
+        padding-right: 30px;
+        border-right: 1px solid #846ea7;
+        @include inline-block();
+    }
+
+    .menu{
+        @include inline-block();
+
+        li{
+            float: left;
+        }
+
+        a{
+            color: #cdbfe3;
+            text-decoration: none;
+            display: block;
+            font-size: 13px;
+            padding: 20px;
+            background: none;
+
+            &:hover{
+                background: #eee;
+                color: #6f5499;
+            }
+        }
+    }
+}
+
+#main-content{
+    width: 900px;
+    margin: 20px auto;
+}
+
+#footer{
+    width: 100%;
+
+    p{
+        font-size: 12px;
+        text-align: center;
+    }
 }

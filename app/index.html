@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" ng-app="katrina"> <!--<![endif]-->
 <head>
-    <title>Katrina</title>
+    <title>App</title>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -12,6 +12,7 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="static/css/reset.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="static/css/application.css">
 
     <!-- Angularjs -->
@@ -19,14 +20,30 @@
     <script src="static/js/libs/angular-route.js"></script>
     <script src="static/js/app.js"></script>
 
-    <!-- katrina stuffs -->
+    <!-- App stuffs -->
     <script src="static/js/controllers/list-controller.js"></script>
 
     <!-- modernizr -->
     <script src="static/js/libs/modernizr.js"></script>
 </head>
 <body>
-    <div id="page" ng-view></div>
+    <header id="container-header">
+        <div class="header clearfix">
+            <h1 class="title">Painel de controle</h1>
+
+            <menu class="menu clearfix">
+                <li><a href="" title="">Pedidos</a></li>
+                <li><a href="" title="">Endereço de entrega</a></li>
+                <li><a href="" title="">Perfil do usuário</a></li>
+            </menu>
+        </div>
+    </header>
+
+    <section id="main-content" ng-view></section>
+
+    <footer id="footer">
+        <p>© nando rossetto</p>
+    </footer>
 
     <!-- build:js static/js/build-min.js -->
         <script src="static/js/libs/jquery.js"></script>
