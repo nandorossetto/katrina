@@ -22,7 +22,7 @@ describe('#1 Unit: OrderController', function(){
     });
 });
 
-describe('#2 Unit: DeliveryAddressController', function(){
+describe('#2 Unit: UserInfoController', function(){
     var scope, httpBackend;
 
     beforeEach(module('ListingModule'));
@@ -32,16 +32,16 @@ describe('#2 Unit: DeliveryAddressController', function(){
         httpBackend = $httpBackend;
         scope = $rootScope.$new();
         
-        $controller('DeliveryAddressController', { $scope: scope }); 
-        httpBackend.expectGET('http://www.mocky.io/v2/54db92cf7d28594b062c641e').respond([
-            {"delivery_address_1": ''},
-            {"delivery_address_2": ''}
+        $controller('UserInfoController', { $scope: scope }); 
+        httpBackend.expectGET('http://www.mocky.io/v2/54dbaa4b7d28594a082c6431').respond([
+            {"obj_1": ''},
+            {"obj_2": ''}
         ]);
         
     }));
 
     it('should load JSON with items', function(){
         httpBackend.flush();
-        expect(scope.users.length).toBe(2);
+        expect(scope.profiles.length).toBe(2);
     });
 });
