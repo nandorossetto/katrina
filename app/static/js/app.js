@@ -8,7 +8,7 @@ katrina.config(['$routeProvider', function($routeProvider) {
     $routeProvider
 
     .when('/', {
-        templateUrl : 'views/list.html',
+        templateUrl : 'views/list-order.html',
         controller  : 'ListController'
     })
     .when('/endereco-de-entrega', {
