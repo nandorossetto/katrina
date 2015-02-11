@@ -1,18 +1,20 @@
 <h2 class="title">Pedidos</h2>
 <div class="container-table">
     <table class="table"  ng-repeat="client in clients">
-        <tbody>
+        <thead>
             <tr>
                 <th>{{ client.name }}</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td ng-class-even="'even'">
-                    <table>
+                    <table width="100%">
                         <tbody>
-                            <tr ng-repeat="i in items">
-                                <td>{{ i.name }}</td>
-                                <td>{{ i.description }}</td>
-                                <td><img ng-src="{{ i.image }}" alt="{{ i.description }}"></td>
+                            <tr ng-repeat="order in client.order">
+                                <td>{{ order.name }}</td>
+                                <td>{{ order.description }}</td>
+                                <td><img ng-src="{{ order.image }}" alt="{{ order.description }}"></td>
                             </tr>
                         </tbody>
                     </table>

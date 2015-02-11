@@ -79,7 +79,8 @@
                 configFile: 'karma.conf.js',
                 browsers: ['PhantomJS'],
                 port: 9000,
-                hostname: '127.0.0.1'
+                hostname: '127.0.0.1',
+                singleRun: true,
             }
         },
 

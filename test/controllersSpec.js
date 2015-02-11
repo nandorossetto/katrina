@@ -9,7 +9,7 @@ describe('#1 Unit: ListController', function(){
         scope = $rootScope.$new();
         
         $controller('ListController', { $scope: scope }); 
-        httpBackend.expectGET('http://www.mocky.io/v2/54da65f4267da33b0bb0f396').respond([
+        httpBackend.expectGET('http://www.mocky.io/v2/54db565a7d2859d4002c63ea').respond([
             {"client_1": ''},
             {"client_2": ''}
         ]);

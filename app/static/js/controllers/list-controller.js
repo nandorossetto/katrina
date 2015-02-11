@@ -4,17 +4,9 @@ ListController.controller('ListController', ['$scope', '$http',
     function ($scope, $http) {
         $http({
             method: 'GET',
-            url: 'http://www.mocky.io/v2/54da65f4267da33b0bb0f396'
+            url: 'http://www.mocky.io/v2/54db565a7d2859d4002c63ea'
         }).success(function(data){
-            var clientItems = [];
-
-            for(var i in data){
-                clientItems = data[i].order;
-            }
-
             $scope.clients = data;
-            $scope.items = clientItems;
-
 
         }).error(function(){
             console.log('Não carregou o JSON');
