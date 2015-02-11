@@ -2,30 +2,24 @@ body{
     font-family: 'Roboto', Arial;
 }
 
-#container-header{
-    width: 100%;
+#container-sidebar{
+    width: 200px;
+    height: 100%;
+    position: fixed;
     background: #6f5499;
-    border-top: 2px solid #553785;
-
-    .header{
-        width: 90%;
-        margin: 0 auto;
-    }
+    border-right: 2px solid #553785;
 
     .headline{
         font-size: 20px;
         font-weight: normal;
         color: #fff;
-        padding-right: 30px;
-        border-right: 1px solid #846ea7;
-        @include inline-block();
+        padding: 20px 0;
+        text-align: center;
     }
 
     .menu{
-        @include inline-block();
-
         li{
-            float: left;
+            display: block;
         }
 
         a{
@@ -46,8 +40,9 @@ body{
 }
 
 #main-content{
-    width: 90%;
-    margin: 20px auto;
+    width: 80%;
+    margin-left: 220px;
+    padding: 20px 0;
 }
 
 .title{
@@ -57,13 +52,4 @@ body{
     padding-bottom: 10px;
     margin-bottom: 10px;
     line-height: 20px;
-}
-
-#footer{
-    width: 100%;
-
-    p{
-        font-size: 12px;
-        text-align: center;
-    }
 }
