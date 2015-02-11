@@ -8,7 +8,7 @@ describe('#1 Unit: ListController', function(){
         httpBackend = $httpBackend;
         scope = $rootScope.$new();
         
-        $controller('ListController', { $scope: scope }); 
+        $controller('OrderController', { $scope: scope }); 
         httpBackend.expectGET('http://www.mocky.io/v2/54db565a7d2859d4002c63ea').respond([
             {"client_1": ''},
             {"client_2": ''}

@@ -1,1 +1,7 @@
-<h2 class="title">Endereços de entrega</h2>
+<h2 class="title">Lista de endereços</h2>
+<article class="list-address" ng-repeat="user in users">
+    <p><span class="label">Nome: </span>{{ user.name }}</p>
+    <p><span class="label">Endereço: </span>{{ user.address }}</p>
+    <p><span class="label">Cidade: </span>{{ user.city }}</p>
+    <p><span class="label">Estado: </span>{{ user.state }}</p>
+</article>

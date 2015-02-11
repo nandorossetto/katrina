@@ -9,11 +9,11 @@ katrina.config(['$routeProvider', function($routeProvider) {
 
     .when('/', {
         templateUrl : 'views/list-order.html',
-        controller  : 'ListController'
+        controller  : 'OrderController'
     })
     .when('/endereco-de-entrega', {
         templateUrl : 'views/list-address.html',
-        controller  : 'ListController'
+        controller  : 'DeliveryAddressController'
     })
     .when('/perfil-do-usuario', {
         templateUrl : 'views/list-profile.html',
