@@ -11,6 +11,14 @@ katrina.config(['$routeProvider', function($routeProvider) {
         templateUrl : 'views/list.html',
         controller  : 'ListController'
     })
+    .when('/endereco-de-entrega', {
+        templateUrl : 'views/list-address.html',
+        controller  : 'ListController'
+    })
+    .when('/perfil-do-usuario', {
+        templateUrl : 'views/list-profile.html',
+        controller  : 'ListController'
+    })
     .otherwise({
         redirectTo: '/404',
         templateUrl : 'views/404.html'

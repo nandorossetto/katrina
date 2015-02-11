@@ -8,7 +8,7 @@ body{
     border-top: 2px solid #553785;
 
     .header{
-        width: 900px;
+        width: 90%;
         margin: 0 auto;
     }
 
@@ -36,7 +36,8 @@ body{
             padding: 20px;
             background: none;
 
-            &:hover{
+            &:hover,
+            &.curren{
                 background: #eee;
                 color: #6f5499;
             }
@@ -45,7 +46,7 @@ body{
 }
 
 #main-content{
-    width: 900px;
+    width: 90%;
     margin: 20px auto;
 }
 
