@@ -5,7 +5,7 @@ ListController.controller('OrderController', ['$scope', '$http',
 
         $http({
             method: 'GET',
-            url: 'http://www.mocky.io/v2/54db8efb7d2859ec052c6419'
+            url: 'http://www.mocky.io/v2/54db96197d285991062c6420'
         }).success(function(data){
             $scope.clients = data;
 
