@@ -1,20 +1,22 @@
-<h2>Pedidos</h2>
+<h2 class="title">Pedidos</h2>
 <div class="container-table">
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Cliente</th>
-                <th>Nome do Produto</th>
-                <th>Descrição</th>
-                <th>Foto</th>
-            </tr>
-        </thead>
+    <table class="table"  ng-repeat="client in clients">
         <tbody>
-            <tr ng-repeat="client in clients">
-                <td ng-class-even="'even'">{{ client.name }}</td>
-                <td ng-class-even="'even'">{{ client.order[$index].name }}</td>
-                <td ng-class-even="'even'">{{ client.order[$index].description }}</td>
-                <td ng-class-even="'even'"><img ng-src="{{ client.order[$index].image }}" alt="{{ client.order[$index].name }}"></td>
+            <tr>
+                <th>{{ client.name }}</th>
+            </tr>
+            <tr>
+                <td ng-class-even="'even'">
+                    <table>
+                        <tbody>
+                            <tr ng-repeat="i in items">
+                                <td>{{ i.name }}</td>
+                                <td>{{ i.description }}</td>
+                                <td><img ng-src="{{ i.image }}" alt="{{ i.description }}"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
             </tr>
         </tbody>
     </table>

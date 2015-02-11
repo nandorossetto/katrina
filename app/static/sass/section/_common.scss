@@ -12,7 +12,7 @@ body{
         margin: 0 auto;
     }
 
-    .title{
+    .headline{
         font-size: 20px;
         font-weight: normal;
         color: #fff;
@@ -48,6 +48,15 @@ body{
 #main-content{
     width: 90%;
     margin: 20px auto;
+}
+
+.title{
+    font-size: 20px;
+    color: #553785;
+    border-bottom: 1px solid #efefef;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
 }
 
 #footer{
