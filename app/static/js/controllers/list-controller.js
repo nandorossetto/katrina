@@ -16,14 +16,15 @@ ListController.controller('OrderController', ['$scope', '$http',
     }]
 );
 
-ListController.controller('DeliveryAddressController', ['$scope', '$http',
+ListController.controller('UserInfoController', ['$scope', '$http',
     function ($scope, $http) {
 
         $http({
             method: 'GET',
-            url: 'http://www.mocky.io/v2/54db92cf7d28594b062c641e'
+            url: 'http://www.mocky.io/v2/54dbaa4b7d28594a082c6431'
         }).success(function(data){
-            $scope.users = data;
+            $scope.deliveryInformations = data;
+            $scope.profiles = data;
 
         }).error(function(){
             console.log('Não carregou o JSON');

@@ -1,1 +1,15 @@
-<h2>Perfil do usuário</h2>
+<h2 class="title">Perfil do usuário</h2>
+<article class="list-profile clearfix" ng-repeat="profile in profiles">
+    <div class="avatar left">
+        <img src="{{ profile.thumb }}" alt="{{ profile.name }}">
+    </div>
+    <div class="details left">
+        <p><span class="label">Nome: </span>{{ profile.name }}</p>
+        <p><span class="label">E-mail: </span>{{ profile.address }}</p>
+        <p><span class="label">Tel Fixo: </span>{{ profile.phone }}</p>
+        <p><span class="label">Celular: </span>{{ profile.mobile_phone }}</p>
+        <p><span class="label">Endereço: </span>{{ profile.address }}</p>
+        <p><span class="label">Cidade: </span>{{ profile.city }}</p>
+        <p><span class="label">Estado: </span>{{ profile.state }}</p>
+    </div>
+</article>
