@@ -61,7 +61,7 @@
         },
 
         usemin: {
-            html: 'index.html'
+            html: 'app/index.html'
         },
 
         connect: {
