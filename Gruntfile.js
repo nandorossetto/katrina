@@ -46,7 +46,7 @@
         },
 
         clean: {
-            js: ['static/js/build.js']
+            js: ['app/static/js/build.js']
         },
 
         concat: {
@@ -55,8 +55,8 @@
             },
 
             dist: {
-                src: ['static/js/**/*.js'],
-                dest: 'static/js/build.js'
+                src: ['app/static/js/**/*.js'],
+                dest: 'app/static/js/build.js'
             }
         },
 
